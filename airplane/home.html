@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+        <title>airplane</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="home.css">
+        <script>
+            function air(){
+                let str1=document.eform.eori.value;
+                let str2=document.eform.edest.value;
+                let str3=document.eform.edate.value;
+                let str4=document.eform.ecabin.value;
+                let str5=document.eform.epass.value;
+                var c1=confirm(str1+":::"+str2+":::"+str3+":::"+str4+":::"+str5,true );
+            if( c1==true){
+                
+            }
+            else( c1==false)
+            {
+            
+            }
+             
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+           <div class="logo"> <img src="airlogo.jpg"></div>
+           <div class="brand"> <h2>AEROCOM</h2> </div>
+            <div class="buttons">
+                <div>
+                  <a href="login.html"> <input type="button" class="btn btn-primary" value="Login" style="width: 100%;"> </a>
+                </div>
+          <div>
+          <a href="signup.html"><input type="button" class="btn btn-primary" value="Signup" style="width:100%"> </a>
+          </div>
+           
+            <input type="button" class="btn btn-primary" value="Customer Service">
+            </div>
+        </nav>
+        <main>
+            <form name="eform" action="">
+                <label>Origin :</label>
+                <select name="eori">
+                    <option></option>
+                    <option>Delhi</option>
+                    <option>Mumbai</option>
+                    <option>chennai</option>
+                    <option>Benguluru</option>
+                    <option>Hyderabad</option>
+                    
+                </select>
+                <label>Destination  :</label>
+                <select name="edest">
+                    <option></option>
+                    <option>Goa</option>
+                    <option>Mumbai</option>
+                    <option>chennai</option>
+                    <option>Benguluru</option>
+                    <option>Hyderabad</option>
+                </select>
+                <label>Departure :</label>
+                <input type="date" name="edate">
+                <label>Cabin class:</label>
+                <select name="ecabin">
+                    <option></option>
+                    <option>Economy</option>
+                    <option>Bussiness</option>
+                    <option>Firstclass</option>
+                </select>
+                <label> Passenger Type:</label>
+                <select name="epass">
+                    <option></option>
+                    <option>Adult</option>
+                    <option>Child</option>
+                    <option>Infant</option>
+                </select> 
+                <br><br>
+                <input type="button" onclick="air()"  class="btn btn-primary" value="Search Flights" >
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 AEROCOM. All Rights Reserved </p>
+        </footer>
+    </body>
+</html>
